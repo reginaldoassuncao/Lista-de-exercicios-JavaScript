@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#descricao {
+    margin-bottom: 20px;
+}
+
+#descricao h2 {
+    color: #333;
+}
+
+code {
+    display: block;
+    white-space: pre-wrap;
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+#saida {
+    font-weight: bold;
+}

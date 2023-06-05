@@ -1,16 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Hello World em Javascript</title>
+    <title>Saudação Personalizada em Javascript</title>
+    <style>
+        code {
+            display: block;
+            white-space: pre-wrap;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
 
-<h1>Exercício de Javascript: Hello World</h1>
+<h1>Exercício de Javascript: Saudação Personalizada</h1>
 
-<p>Abra o console para ver a saída.</p>
+<!-- Descrição do exercício -->
+<div id="descricao">
+    <h2>Descrição:</h2>
+    <p>Este é um exercício simples que solicita ao usuário que digite seu nome. O nome é então usado para exibir uma saudação personalizada na tela.</p>
+    <h2>Código:</h2>
+    <code>
+    var nome = prompt("Por favor, digite seu nome");
+    document.getElementById("saida").innerHTML = "Hello, " + nome + "!";
+    </code>
+</div>
+
+<!-- Aqui está o elemento onde vamos colocar nossa saudação -->
+<p id="saida"></p>
+<p><a href="../index.html">Voltar para a lista de exercícios</a></p>
 
 <script>
-    console.log("Hello, World!");
+    var nome = prompt("Por favor, digite seu nome");
+    document.getElementById("saida").innerHTML = "Hello, " + nome + "!";
 </script>
 
 </body>
