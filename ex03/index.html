@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Par ou Ímpar em Javascript</title>
+    <style>
+        code {
+            display: block;
+            white-space: pre-wrap;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Exercício de Javascript: Par ou Ímpar</h1>
+
+<!-- Descrição do exercício -->
+<div id="descricao">
+    <h2>Descrição:</h2>
+    <p>Este é um exercício interativo que pede ao usuário para inserir um número. O programa então verifica se o número é par ou ímpar e exibe a informação na tela.</p>
+    <h2>Código:</h2>
+    <code>
+    var numero = parseInt(prompt("Digite um número"));
+    
+    if (numero % 2 === 0) {
+        document.getElementById("saida").innerHTML = "O número " + numero + " é par.";
+    } else {
+        document.getElementById("saida").innerHTML = "O número " + numero + " é ímpar.";
+    }
+    </code>
+</div>
+
+<!-- Aqui está o elemento onde vamos colocar o resultado -->
+<p id="saida"></p>
+<p><a href="../index.html">Voltar para a lista de exercícios</a></p>
+<script>
+    var numero = parseInt(prompt("Digite um número"));
+
+    if (numero % 2 === 0) {
+        document.getElementById("saida").innerHTML = "O número " + numero + " é par.";
+    } else {
+        document.getElementById("saida").innerHTML = "O número " + numero + " é ímpar.";
+    }
+</script>
+
+</body>
+</html>
