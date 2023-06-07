@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Soma de Números em Javascript</title>
+    <style>
+        code {
+            display: block;
+            white-space: pre-wrap;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Exercício de Javascript: Soma de Números</h1>
+
+<!-- Descrição do exercício -->
+<div id="descricao">
+    <h2>Descrição:</h2>
+    <p>Este é um exercício interativo que pede ao usuário para inserir dois números. O programa então soma os números e exibe o resultado na tela.</p>
+    <h2>Código:</h2>
+    <code>
+    var num1 = parseInt(prompt("Digite o primeiro número"));
+    var num2 = parseInt(prompt("Digite o segundo número"));
+
+    var soma = num1 + num2;
+
+    document.getElementById("saida").innerHTML = "A soma de " + num1 + " e " + num2 + " é " + soma + ".";
+    </code>
+</div>
+
+<!-- Aqui está o elemento onde vamos colocar o resultado -->
+<p id="saida"></p>
+<p><a href="../index.html">Voltar para a lista de exercícios</a></p>
+
+<script>
+    var num1 = parseInt(prompt("Digite o primeiro número"));
+    var num2 = parseInt(prompt("Digite o segundo número"));
+
+    var soma = num1 + num2;
+
+    document.getElementById("saida").innerHTML = "A soma de " + num1 + " e " + num2 + " é " + soma + ".";
+</script>
+
+</body>
+</html>
