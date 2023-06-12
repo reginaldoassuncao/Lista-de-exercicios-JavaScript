@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Comparação de Números em Javascript</title>
+    <style>
+        code {
+            display: block;
+            white-space: pre-wrap;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Exercício de Javascript: Comparação de Números</h1>
+
+<!-- Descrição do exercício -->
+<div id="descricao">
+    <h2>Descrição:</h2>
+    <p>Este é um exercício interativo que pede ao usuário para inserir dois números. O programa então compara os números e exibe qual é o maior.</p>
+    <h2>Código:</h2>
+    <code>
+    var numero1 = parseInt(prompt("Digite o primeiro número"));
+    var numero2 = parseInt(prompt("Digite o segundo número"));
+
+    if (numero1 > numero2) {
+        document.getElementById("saida").innerHTML = "O número " + numero1 + " é maior que " + numero2;
+    } else if (numero1 < numero2) {
+        document.getElementById("saida").innerHTML = "O número " + numero2 + " é maior que " + numero1;
+    } else {
+        document.getElementById("saida").innerHTML = "Os números são iguais.";
+    }
+    </code>
+</div>
+
+<!-- Aqui está o elemento onde vamos colocar o resultado -->
+<p id="saida"></p>
+<p><a href="../index.html">Voltar para a lista de exercícios</a></p>
+
+<script>
+    var numero1 = parseInt(prompt("Digite o primeiro número"));
+    var numero2 = parseInt(prompt("Digite o segundo número"));
+
+    if (numero1 > numero2) {
+        document.getElementById("saida").innerHTML = "O número " + numero1 + " é maior que " + numero2;
+    } else if (numero1 < numero2) {
+        document.getElementById("saida").innerHTML = "O número " + numero2 + " é maior que " + numero1;
+    } else {
+        document.getElementById("saida").innerHTML = "Os números são iguais.";
+    }
+</script>
+
+</body>
+</html>
