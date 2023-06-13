@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Saudação Personalizada com Manipuladores de Eventos</title>
+    <style>
+        code {
+            display: block;
+            white-space: pre-wrap;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Exercício de Javascript: Saudação Personalizada com Manipuladores de Eventos</h1>
+
+<!-- Descrição do exercício -->
+<div id="descricao">
+    <h2>Descrição:</h2>
+    <p>Este é um exercício interativo que pede ao usuário para inserir seu nome em um campo de entrada. Ao clicar em um botão, uma saudação personalizada é exibida na tela.</p>
+    <h2>Código:</h2>
+    <code>
+    function saudacaoPersonalizada() {
+        var nome = document.getElementById("nome").value;
+        document.getElementById("saida").innerHTML = "Olá, " + nome + "!";
+    }
+    </code>
+</div>
+
+<!-- Aqui está o elemento onde o usuário insere seu nome -->
+<p>Digite seu nome: <input type="text" id="nome"></p>
+<button onclick="saudacaoPersonalizada()">Diga Olá!</button>
+
+<!-- Aqui está o elemento onde vamos colocar a saudação -->
+<p id="saida"></p>
+<p><a href="../index.html">Voltar para a lista de exercícios</a></p>
+
+<script>
+    function saudacaoPersonalizada() {
+        var nome = document.getElementById("nome").value;
+        document.getElementById("saida").innerHTML = "Olá, " + nome + "!";
+    }
+</script>
+
+</body>
+</html>
