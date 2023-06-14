@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Idade em Javascript</title>
+    <style>
+        code {
+            display: block;
+            white-space: pre-wrap;
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Exercício de Javascript: Calculadora de Idade</h1>
+
+<!-- Descrição do exercício -->
+<div id="descricao">
+    <h2>Descrição:</h2>
+    <p>Este é um exercício interativo que pede ao usuário para inserir sua data de nascimento em um campo de entrada. Ao clicar em um botão, a idade atual é calculada e exibida na tela.</p>
+    <h2>Código:</h2>
+    <code>
+    function calcularIdade() {
+        var dataNascimento = new Date(document.getElementById("dataNascimento").value);
+        var hoje = new Date();
+        var idade = hoje.getFullYear() - dataNascimento.getFullYear();
+        var m = hoje.getMonth() - dataNascimento.getMonth();
+        if (m < 0 || (m === 0 && hoje.getDate() < dataNascimento.getDate())) {
+            idade--;
+        }
+        document.getElementById("saida").innerHTML = "Sua idade é " + idade;
+    }
+    </code>
+</div>
+
+<!-- Aqui está o elemento onde o usuário insere sua data de nascimento -->
+<p>Digite sua data de nascimento: <input type="date" id="dataNascimento"></p>
+<button onclick="calcularIdade()">Calcular Idade!</button>
+
+<!-- Aqui está o elemento onde vamos colocar a idade -->
+<p id="saida"></p>
+<p><a href="../index.html">Voltar para a lista de exercícios</a></p>
+
+<script>
+    function calcularIdade() {
+        var dataNascimento = new Date(document.getElementById("dataNascimento").value);
+        var hoje = new Date();
+        var idade = hoje.getFullYear() - dataNascimento.getFullYear();
+        var m = hoje.getMonth() - dataNascimento.getMonth();
+        if (m < 0 || (m === 0 && hoje.getDate() < dataNascimento.getDate())) {
+            idade--;
+        }
+        document.getElementById("saida").innerHTML = "Sua idade é " + idade;
+    }
+</script>
+
+</body>
+</html>
