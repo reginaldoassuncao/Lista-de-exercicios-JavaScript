@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Manipulação de Array em Javascript</title>
+    <title>Manipulação de Array em Javascript para Iniciantes</title>
     <style>
-        code {
-            display: block;
-            white-space: pre-wrap;
+        p, pre {
+            font-size: 20px;
+        }
+        pre {
             background-color: #f4f4f4;
             padding: 10px;
             border-radius: 5px;
@@ -14,35 +15,39 @@
 </head>
 <body>
 
-<h1>Exercício de Javascript: Manipulação de Array</h1>
+<h1>Exercício de Javascript para Iniciantes: Manipulação de Array</h1>
 
-<!-- Descrição do exercício -->
-<div id="descricao">
-    <h2>Descrição:</h2>
-    <p>Este é um exercício interativo que solicita ao usuário para inserir cinco nomes, que são armazenados em um array. O programa então exibe os nomes em ordem alfabética e em ordem de inserção.</p>
-    <h2>Código:</h2>
-    <code>
-        var nomes = [];
-        for (var i = 0; i < 5; i++) {
-            nomes.push(prompt("Digite o " + (i + 1) + "º nome"));
-        }
-        var nomesOrdenados = [...nomes].sort();
-        document.getElementById("saida").innerHTML = "Ordem de entrada: " + nomes.join(", ") + "<br>Ordem alfabética: " + nomesOrdenados.join(", ");
-        
-    </code>
-</div>
+<p id="descricao">
+    Este é um exercício interativo que solicita ao usuário para inserir três nomes, que são armazenados em um array. O programa então exibe os nomes em ordem de inserção e em ordem alfabética após o usuário clicar no botão abaixo.
+</p>
 
-<!-- Aqui está o elemento onde vamos colocar o resultado -->
+<button onclick="solicitarNomes()">Clique para inserir nomes</button>
+
 <p id="saida"></p>
-<p><a href="../index.html">Voltar para a lista de exercícios</a></p>
+
+<h2>Código:</h2>
+<pre id="codigo"></pre>
 
 <script>
-    var nomes = [];
-    for (var i = 0; i < 5; i++) {
-        nomes.push(prompt("Digite o " + (i + 1) + "º nome"));
+    function solicitarNomes() {
+        var nomes = [];
+        for (var i = 0; i < 3; i++) {
+            var nome = prompt("Digite o " + (i + 1) + "º nome");
+            nomes.push(nome);
+        }
+        var nomesOrdenados = nomes.slice().sort();
+        document.getElementById("saida").innerHTML = "Ordem de entrada: " + nomes.join(", ") + "<br>Ordem alfabética: " + nomesOrdenados.join(", ");
+
+        // Mostra o código usado
+        document.getElementById("codigo").textContent = 
+`var nomes = [];
+for (var i = 0; i < 3; i++) {
+    var nome = prompt("Digite o " + (i + 1) + "º nome");
+    nomes.push(nome);
+}
+var nomesOrdenados = nomes.slice().sort();
+document.getElementById("saida").innerHTML = "Ordem de entrada: " + nomes.join(", ") + "<br>Ordem alfabética: " + nomesOrdenados.join(", ");`;
     }
-    var nomesOrdenados = [...nomes].sort();
-    document.getElementById("saida").innerHTML = "Ordem de entrada: " + nomes.join(", ") + "<br>Ordem alfabética: " + nomesOrdenados.join(", ");
 </script>
 
 </body>
